@@ -1,6 +1,6 @@
 package Bayesian
 
-type Bayesian struct {
+type Filter struct {
 	prior []float64 
 	likelyhood []float64
 	bayesian []float64
