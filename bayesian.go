@@ -42,7 +42,7 @@ func (bay *Bayesian) CrunchBayesian() float64 {
 	for i := 0; i < bay.num_classes; i++ {
 		var res float64 = bay.prior[i] * bay.likelyhood[i];
 		
-		append(bay.bayesian, res);
+		bay.bayesian = append(bay.bayesian, res);
 	}
 
 	return bay.MaxInSlice(bay.bayesian)
